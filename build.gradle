@@ -13,12 +13,13 @@ repositories {
 }
 
 dependencies {
-	implementation 'com.google.code.gson:gson:2.8.5'
+	implementation 'com.google.code.gson:gson:2.8.6'
 	implementation 'com.squareup.retrofit2:retrofit:2.4.0'
 	implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.1'
+	compile group: 'au.com.dius', name: 'pact-jvm-consumer-junit5', version: '4.0.10'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
